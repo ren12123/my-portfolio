@@ -1,0 +1,52 @@
+@use "../base/variables" as v;
+
+.work-card {
+  background: v.$card-bg;
+  border: 1px solid v.$border-color;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: transform 0.3s, border-color 0.3s;
+
+  &:hover {
+    transform: translateY(-5px);
+    border-color: v.$accent-color;
+  }
+
+  &__image-wrapper {
+    aspect-ratio: 16 / 9;
+    background: #21262d;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__placeholder {
+    color: v.$text-sub;
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+
+  &__body {
+    padding: 1.5rem;
+  }
+
+  &__title {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+  }
+
+  &__text {
+    font-size: 0.9rem;
+    color: v.$text-sub;
+    margin-bottom: 1.5rem;
+    line-height: 1.7;
+    strong { color: v.$accent-color; }
+  }
+
+  &__links {
+    display: flex;
+    gap: 1rem;
+  }
+}

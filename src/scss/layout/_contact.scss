@@ -1,0 +1,28 @@
+@use "../base/variables" as v;
+
+.contact {
+  padding: 100px 2rem;
+  text-align: center;
+  border-top: 1px solid v.$border-color;
+
+  &__inner {
+    max-width: v.$max-width;
+    margin: 0 auto;
+  }
+
+  &__text {
+    color: v.$text-sub;
+    margin-bottom: 2rem;
+  }
+
+  &__link {
+    display: inline-block;
+    background: white;
+    color: black;
+    padding: 1rem 2.5rem;
+    border-radius: 50px;
+    font-weight: 700;
+    transition: transform 0.3s;
+    &:hover { transform: scale(1.05); }
+  }
+}

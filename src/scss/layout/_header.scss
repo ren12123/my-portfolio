@@ -1,0 +1,38 @@
+@use "../base/variables" as v;
+
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: rgba(v.$bg-color, 0.8);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid v.$border-color;
+  z-index: 100;
+
+  &__inner {
+    max-width: v.$max-width;
+    margin: 0 auto;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__logo {
+    font-size: 1.25rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: v.$accent-color;
+  }
+
+  &__list {
+    display: flex;
+    gap: 2rem;
+  }
+
+  &__link {
+    font-size: 0.9rem;
+    font-weight: 700;
+    &:hover { color: v.$accent-color; }
+  }
+}

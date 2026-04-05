@@ -1,0 +1,25 @@
+@use "../base/variables" as v;
+
+.works {
+  padding: 100px 2rem;
+  max-width: v.$max-width;
+  margin: 0 auto;
+
+  .section-title {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 0.5rem;
+  }
+
+  .section-subtitle {
+    text-align: center;
+    color: v.$text-sub;
+    margin-bottom: 4rem;
+  }
+
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+  }
+}

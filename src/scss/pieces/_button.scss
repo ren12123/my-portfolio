@@ -1,0 +1,25 @@
+@use "../base/variables" as v;
+
+.btn {
+  display: block;
+  padding: 0.6rem 1.2rem;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  font-weight: 700;
+  flex: 1;
+  text-align: center;
+  cursor: pointer;
+
+  &--primary {
+    background: v.$accent-color;
+    color: white;
+    border: none;
+  }
+
+  &--outline {
+    border: 1px solid v.$border-color;
+    background: transparent;
+    color: v.$text-main;
+    &:hover { border-color: v.$text-main; }
+  }
+}
