@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ren | Frontend Developer Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/src/scss/style.scss">
+  </head>
+  <body>
+    <div id="app">
+      <header class="header">
+        <div class="header__inner">
+          <h1 class="header__logo">Ren.dev</h1>
+          <nav class="header__nav">
+            <ul class="header__list">
+              <li class="header__item"><a href="#about" class="header__link">About</a></li>
+              <li class="header__item"><a href="#works" class="header__link">Works</a></li>
+              <li class="header__item"><a href="#contact" class="header__link">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+
+      <main class="main">
+        <section id="hero" class="hero">
+          <div class="hero__inner">
+            <p class="hero__label">Frontend Developer</p>
+            <h2 class="hero__title">Ren</h2>
+            <p class="hero__description">
+              Figmaのデザインカンプを忠実に再現する<br class="u-pc-only">
+              <strong>「デザイン模写」</strong>と<strong>「BEM設計」</strong>を得意としています。
+            </p>
+            <div class="hero__tags">
+              <span class="tag">TypeScript</span>
+              <span class="tag">SCSS (BEM)</span>
+              <span class="tag">Vite</span>
+              <span class="tag">Figma Replication</span>
+            </div>
+          </div>
+        </section>
+
+        <section id="works" class="works">
+          <div class="works__inner">
+            <h2 class="section-title">Selected Works</h2>
+            <p class="section-subtitle">デザインカンプ（Figma）を元に制作した実績です</p>
+            
+            <div class="works__grid">
+              
+              <article class="work-card">
+                <div class="work-card__image-wrapper">
+                  <div class="work-card__placeholder">Udon-ya Project</div>
+                </div>
+                <div class="work-card__body">
+                  <h3 class="work-card__title">Udon-ya Landing Page</h3>
+                  <p class="work-card__text">
+                    <strong>【デザイン模写】</strong><br>
+                    Figmaのデザインカンプを元に、パーツの共通化を意識してBEMでコーディング。1px単位の余白再現にこだわりました。
+                  </p>
+                  <div class="work-card__links">
+                    <a href="https://coding-practice-01.vercel.app" target="_blank" rel="noopener noreferrer" class="btn btn--primary">View Site</a>
+                    <a href="https://github.com/ren12123/coding-practice-01" target="_blank" rel="noopener noreferrer" class="btn btn--outline">GitHub</a>
+                  </div>
+                </div>
+              </article>
+
+              <article class="work-card">
+                <div class="work-card__image-wrapper">
+                  <div class="work-card__placeholder">Gallery Project</div>
+                </div>
+                <div class="work-card__body">
+                  <h3 class="work-card__title">Practice Gallery Site</h3>
+                  <p class="work-card__text">
+                    <strong>【デザイン模写】</strong><br>
+                    複雑なグリッドレイアウトをCSS Gridで再現。レスポンシブ時の画像比率や余白の挙動をカンプ通りに実装しています。
+                  </p>
+                  <div class="work-card__links">
+                    <a href="https://practice-gallery-site.vercel.app" target="_blank" rel="noopener noreferrer" class="btn btn--primary">View Site</a>
+                    <a href="https://github.com/ren12123/practice-gallery-site" target="_blank" rel="noopener noreferrer" class="btn btn--outline">GitHub</a>
+                  </div>
+                </div>
+              </article>
+
+              <article class="work-card">
+                <div class="work-card__image-wrapper">
+                  <div class="work-card__placeholder">Corporate LP Project</div>
+                </div>
+                <div class="work-card__body">
+                  <h3 class="work-card__title">Corporate Landing Page</h3>
+                  <p class="work-card__text">
+                    <strong>【デザイン模写】</strong><br>
+                    TypeScriptを用いた企業向けLP。デザインの意図を汲み取りつつ、保守性の高いコードへと落とし込みました。
+                  </p>
+                  <div class="work-card__links">
+                    <a href="https://lp-for-company.vercel.app" target="_blank" rel="noopener noreferrer" class="btn btn--primary">View Site</a>
+                    <a href="https://github.com/ren12123/lp-for-company" target="_blank" rel="noopener noreferrer" class="btn btn--outline">GitHub</a>
+                  </div>
+                </div>
+              </article>
+
+            </div>
+          </div>
+        </section>
+
+        <section id="contact" class="contact">
+          <div class="contact__inner">
+            <h2 class="section-title">Contact</h2>
+            <p class="contact__text">
+              私のポートフォリオをご覧いただきありがとうございます。<br>
+              コードの品質や制作に関するお問い合わせは、GitHubよりお願いいたします。
+            </p>
+            <div class="contact__links">
+              <a href="https://github.com/ren12123" target="_blank" rel="noopener noreferrer" class="contact__btn">GitHub Profile</a>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <p class="footer__copy">&copy; 2024 Ren. All rights reserved.</p>
+      </footer>
+    </div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
