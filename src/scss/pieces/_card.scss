@@ -69,11 +69,39 @@
 
   &__credit {
     font-size: 0.75rem;
-    color: v.$text-sub;
+    color: v.$text-main;
     margin-bottom: 1.5rem;
     font-style: italic;
     border-left: 2px solid v.$border-color;
     padding-left: 8px;
+    
+  
+    & a {
+      color: aqua;
+      position: relative;
+    
+      &::after {
+        content: '';
+        position: absolute;
+        bottom: -1px;
+        left: 0px;
+        height: 1px;
+        width: 100%;
+        background-color: rgb(38, 114, 228);
+
+        transform: scaleX(0);
+        transform-origin: left;
+        transition: all 0.6s ease;
+      }
+
+      &:hover {
+        color: rgb(38, 114, 228);
+
+        &::after {
+           transform: scaleX(1);
+        }
+      }
+    }
   }
 
   &__links {
